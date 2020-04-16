@@ -1,0 +1,33 @@
+app:
+  name: Confluent Kafka
+  code: CONFLUENTKAFKA
+  notify: appzdev@cloudbourne.co
+    
+build:
+  version: 5.4
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: confluent-5.4
+  image_name: alpha/confluent
+    
+deploy:
+  context: alpha/DEV
+  replicas: 1
+  port:
+  - 80
+    
+monitor:
+  notify: appzops@cloudbourne.co      
+    
+properties:
+  AWS_ACCESS_KEY_ID: 
+    vault: AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY:
+    vault: AWS_SECRET_ACCESS_KEY
+  AWS_DEFAULT_REGION: us-east-2
+  K8S_PROVIDER: UNMANAGED
+  PROVIDER_YAML: aws.yaml
+  NAMESPACE: staging-kafka-operator
+  revision : 14
+  
