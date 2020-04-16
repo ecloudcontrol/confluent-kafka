@@ -31,5 +31,5 @@ properties:
   K8S_PROVIDER: UNMANAGED
   PROVIDER_YAML: aws.yaml
   NAMESPACE: staging-kafka-operator
-  revision : 14
+  revision : 15
   
