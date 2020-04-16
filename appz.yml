@@ -26,6 +26,8 @@ properties:
   AWS_SECRET_ACCESS_KEY:
     vault: AWS_SECRET_ACCESS_KEY
   AWS_DEFAULT_REGION: us-east-2
+  KUBECONFIG:
+    vault: KUBECONFIG
   K8S_PROVIDER: UNMANAGED
   PROVIDER_YAML: aws.yaml
   NAMESPACE: staging-kafka-operator
