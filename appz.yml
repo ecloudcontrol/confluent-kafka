@@ -39,5 +39,5 @@ properties:
   BROKER_PREFIX: kafka-0,kafka-1,kafka-2
   LB_TYPE: internal 
   LB_ENABLED: true
-  revision : 21
+  revision : 22
   
