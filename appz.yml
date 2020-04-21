@@ -36,7 +36,7 @@ properties:
   EKS_ZONES: us-east-2b
   DOMAIN: appzdemo.com
   BOOTSTRAP_PREFIX: kafka
-  BROKER_PREFIX: kafka-0,kafka-1,kafka-2
+  BROKER_PREFIX: kafka
   LB_TYPE: internal 
   LB_ENABLED: true
   revision : 22
