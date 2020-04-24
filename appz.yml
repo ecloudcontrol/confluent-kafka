@@ -40,7 +40,7 @@ properties:
   LB_TYPE: internal 
   LB_ENABLED: true
   BROKER_ADDRESS: confluent.appzdemo.com
-  PROKER_PORT: 9092
+  BROKER_PORT: 9092
   KAFKA_USER: test
   KAFKA_PASSWORD:
     vault: KAFKA_PASSWORD
