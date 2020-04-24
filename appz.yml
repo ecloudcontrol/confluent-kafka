@@ -41,5 +41,5 @@ properties:
   LB_ENABLED: true
   KAFKA_PASSWORD:
     vault: KAFKA_PASSWORD
-  revision : 29
+  revision : 30
   
