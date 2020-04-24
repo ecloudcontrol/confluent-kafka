@@ -39,5 +39,7 @@ properties:
   BROKER_PREFIX: kafka
   LB_TYPE: internal 
   LB_ENABLED: true
+  KAFKA_PASSWORD:
+    vault: KAFKA_PASSWORD
   revision : 28
   
