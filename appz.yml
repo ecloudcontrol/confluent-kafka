@@ -39,5 +39,5 @@ properties:
   BROKER_PREFIX: kafka
   LB_TYPE: internal 
   LB_ENABLED: true
-  revision : 25
+  revision : 26
   
