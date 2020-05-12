@@ -40,7 +40,7 @@ properties:
   BROKER_PREFIX: kafka
   LB_TYPE: internal 
   LB_ENABLED: true
-  BROKER_ADDRESS: confluent.appzdemo.com
+  BROKER_ADDRESS: kafka0.appzdemo.com
   BROKER_PORT: 31110
   KAFKA_REPLICAS: 3
   SECURITY_PROTOCOL: SASL_PLAINTEXT
