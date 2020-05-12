@@ -21,6 +21,7 @@ monitor:
   notify: appzops@cloudbourne.co      
     
 properties:
+  KAFKA_DEPLOYMENT_TYPE: HUB
   AWS_ACCESS_KEY_ID: 
     vault: AWS_ACCESS_KEY_ID
   AWS_SECRET_ACCESS_KEY:
