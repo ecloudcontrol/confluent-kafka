@@ -49,5 +49,6 @@ properties:
   KAFKA_USER: test
   KAFKA_PASSWORD:
     vault: KAFKA_PASSWORD
+  APPZ_TEARDOWN_TOKEN: 20200517-0515
   revision : 56
   
