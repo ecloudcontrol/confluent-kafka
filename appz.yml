@@ -40,5 +40,5 @@ properties:
   BROKER_PREFIX: kafka
   KAFKA_REPLICAS: 3
   APPZ_TEARDOWN_TOKEN: 20200521-2020
-  revision : 57
+  revision : 58
   
