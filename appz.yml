@@ -34,6 +34,6 @@ properties:
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
-  APPZ_TEARDOWN_TOKEN: 20200521-2140
+  APPZ_TEARDOWN_TOKEN: 20200521-2200
   revision : 59
   
