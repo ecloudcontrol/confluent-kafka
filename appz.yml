@@ -22,6 +22,7 @@ monitor:
     
 properties:
   KAFKA_DEPLOYMENT_TYPE: HUB
+  KAFKA_DEPLOYMENT_TYPE: HUB
   AWS_ACCESS_KEY_ID: 
     vault: AWS_ACCESS_KEY_ID
   AWS_SECRET_ACCESS_KEY:
@@ -29,6 +30,7 @@ properties:
   AWS_DEFAULT_REGION: us-east-2
   KUBECONFIG:
     vault: KUBECONFIG
+  K8S_PROVIDER: UNMANAGED
   PROVIDER_YAML: ntnx.yaml
   NAMESPACE: staging-kafka-operator
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
@@ -37,7 +39,17 @@ properties:
   DOMAIN: appzdemo.com
   BOOTSTRAP_PREFIX: kafka
   BROKER_PREFIX: kafka
+  LB_TYPE: internal 
+  LB_ENABLED: true
+  BROKER_ADDRESS: kafka0.appzdemo.com
+  BROKER_PORT: 31110
   KAFKA_REPLICAS: 3
-  APPZ_TEARDOWN_TOKEN: 20200522-1220
-  revision : 60
+  SECURITY_PROTOCOL: SASL_PLAINTEXT
+  SASL_MECHANISMS: PLAIN
+  KAFKA_TOPIC: appzalphademo
+  KAFKA_USER: test
+  KAFKA_PASSWORD:
+    vault: KAFKA_PASSWORD
+  APPZ_TEARDOWN_TOKEN: 20200521-1900
+  revision : 56
   
