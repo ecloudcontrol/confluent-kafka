@@ -89,8 +89,8 @@ kafka:
   loadBalancer:
     bootstrapPrefix: kafka
     brokerPrefix: kafka
-    domain: appzdemo.com
-    enabled: 'True'
+    domain: ""
+    enabled: false
     type: internal
   metricReporter:
     enabled: false
