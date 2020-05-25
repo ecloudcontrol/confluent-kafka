@@ -29,6 +29,6 @@ properties:
   EKS_ZONES: us-east-2b
   NAMESPACE: staging-kafka-operator
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
-  APPZ_TEARDOWN_TOKEN: 20200525-0240
+  APPZ_TEARDOWN_TOKEN: 20200525-1230
   revision : 56
   
