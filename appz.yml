@@ -27,6 +27,6 @@ properties:
   PROVIDER_YAML: ntnx.yaml
   NAMESPACE: staging-kafka-operator
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
-  APPZ_TEARDOWN_TOKEN: 20200525-0225
+  APPZ_TEARDOWN_TOKEN: 20200525-0220
   revision : 56
   
