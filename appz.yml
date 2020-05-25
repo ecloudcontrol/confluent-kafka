@@ -9,7 +9,7 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: confluent-5.4
-  image_name: alpha/confluent
+  image_name: alpha/confluent-ntnx
     
 deploy:
   context: alpha/DEV
@@ -49,6 +49,6 @@ properties:
   KAFKA_USER: test
   KAFKA_PASSWORD:
     vault: KAFKA_PASSWORD
-  APPZ_TEARDOWN_TOKEN: 20200525-0100
+  APPZ_TEARDOWN_TOKEN: 20200525-0000
   revision : 56
   
