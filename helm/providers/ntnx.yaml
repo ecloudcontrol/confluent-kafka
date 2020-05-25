@@ -62,7 +62,7 @@ global:
     registry:
       credential:
         required: false
-      fqdn: quincy2019-registry-common.ecloudcontrol.com
+      fqdn: docker.io
     storage:
       VolumeBindingMode: Immediate
       parameters:
