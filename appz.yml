@@ -29,8 +29,8 @@ properties:
   AWS_DEFAULT_REGION: us-east-2
   KUBECONFIG:
     vault: KUBECONFIG
-  PROVIDER_YAML: staging-kafka-hub
-  NAMESPACE: dev-kafka-spoke
+  PROVIDER_YAML: aws-custom.yaml
+  NAMESPACE: staging-kafka-hub
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
