@@ -29,5 +29,5 @@ properties:
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   ENABLE_EXTERNAL_LB: true
   APPZ_TEARDOWN_TOKEN: 20200527-0448
-  revision : 65
+  revision : 66
   
