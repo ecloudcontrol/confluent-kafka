@@ -28,6 +28,6 @@ properties:
   NAMESPACE: staging-kafka-hub
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   ENABLE_EXTERNAL_LB: true
-  APPZ_TEARDOWN_TOKEN: 20200527-0430
+  APPZ_TEARDOWN_TOKEN: 20200527-0425
   revision : 63
   
