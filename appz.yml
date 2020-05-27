@@ -30,7 +30,7 @@ properties:
   KUBECONFIG:
     vault: KUBECONFIG
   PROVIDER_YAML: aws-custom.yaml
-  NAMESPACE: staging-kafka-operator
+  NAMESPACE: dev-kafka-hub
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
@@ -38,6 +38,6 @@ properties:
   BOOTSTRAP_PREFIX: kafka
   BROKER_PREFIX: kafka
   KAFKA_REPLICAS: 3
-  APPZ_TEARDOWN_TOKEN: 20200522-1220
+  APPZ_TEARDOWN_TOKEN: 20200527-2100
   revision : 61
   
