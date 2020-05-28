@@ -31,7 +31,7 @@ global:
 ##
 zookeeper:
   name: zookeeper
-  replicas: 3
+  replicas: 2
   resources:
     requests:
       cpu: 200m
@@ -41,7 +41,7 @@ zookeeper:
 ##
 kafka:
   name: kafka
-  replicas: 3
+  replicas: 2
   resources:
     requests:
       cpu: 200m
@@ -76,7 +76,7 @@ connect:
   dependencies:
     kafka:
       bootstrapEndpoint: kafka:9071
-      brokerCount: 3
+      brokerCount: 2
     schemaRegistry:
       enabled: true
       url: http://schemaregistry:8081
@@ -97,7 +97,7 @@ replicator:
     domain: ""
   dependencies:
     kafka:
-      brokerCount: 3
+      brokerCount: 2
       bootstrapEndpoint: kafka:9071
 ##
 ## Schema Registry
@@ -116,7 +116,7 @@ schemaregistry:
     domain: ""
   dependencies:
     kafka:
-      brokerCount: 3
+      brokerCount: 2
       bootstrapEndpoint: kafka:9071
 
 ##
@@ -137,9 +137,9 @@ ksql:
     domain: ""
   dependencies:
     kafka:
-      brokerCount: 3
+      brokerCount: 2
       bootstrapEndpoint: kafka:9071
-      brokerEndpoints: kafka-0.kafka:9071,kafka-1.kafka:9071,kafka-2.kafka:9071
+      brokerEndpoints: kafka-0.kafka:9071,kafka-1.kafka:9071
     schemaRegistry:
       enabled: false
       tls:
