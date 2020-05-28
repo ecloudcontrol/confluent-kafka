@@ -37,7 +37,8 @@ properties:
   DOMAIN: appzdemo.com
   BOOTSTRAP_PREFIX: kafka
   BROKER_PREFIX: kafka
-  KAFKA_REPLICAS: 3
+  KAFKA_REPLICAS: 2
+  VERBOSE_LOG: false
   APPZ_TEARDOWN_TOKEN: 20200528-0100
   revision : 61
   
