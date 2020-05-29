@@ -35,6 +35,7 @@ properties:
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
   KAFKA_REPLICAS: 2
+  ENABLE_EXTERNAL_LB: true
   VERBOSE_LOG: false
   APPZ_TEARDOWN_TOKEN: 20200528-1750
   revision : 63
