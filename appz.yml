@@ -38,5 +38,5 @@ properties:
   ENABLE_EXTERNAL_LB: true
   VERBOSE_LOG: false
   APPZ_TEARDOWN_TOKEN: 20200528-1750
-  revision : 63
+  revision : 64
   
