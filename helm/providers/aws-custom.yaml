@@ -3,12 +3,13 @@
 global:
   provider:
     name: aws
-    region: us-west-2
+    region: us-east-2
     kubernetes:
        deployment:
          ## If kubernetes is deployed in multi zone mode then specify availability-zones as appropriate
          ## If kubernetes is deployed in single availability zone then specify appropriate values
          zones:
+          - us-east-2b
     storage:
       provisioner: kubernetes.io/aws-ebs
       ## Use Retain if you want to persist data after CP cluster has been uninstalled
