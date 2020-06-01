@@ -4,7 +4,7 @@ app:
   notify: appzdev@cloudbourne.co
     
 build:
-  version: 5.5
+  version: 5.4
   env: DEV
   build_file: none
   output_files: output/*.zip
@@ -35,5 +35,5 @@ properties:
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
   APPZ_TEARDOWN_TOKEN: 20200521-1900
-  revision : 56
+  revision : 57
   
