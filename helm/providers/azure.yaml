@@ -1,23 +1,16 @@
-## Overriding values for Chart's values.yaml for AWS
-##
+## Overriding values for Chart's values.yaml
+## Example values to run Confluent Operator in Azure
 global:
   provider:
-    name: aws
-    region: us-east-2
+    name: azure
+    region: westus
     kubernetes:
        deployment:
          ## If kubernetes is deployed in multi zone mode then specify availability-zones as appropriate
          ## If kubernetes is deployed in single availability zone then specify appropriate values
-         zones: 
-          - us-east-2b
-    storage:
-      provisioner: kubernetes.io/aws-ebs
-      ## Use Retain if you want to persist data after CP cluster has been uninstalled
-      reclaimPolicy: Delete
-      parameters:
-        encrypted: "false"
-        kmsKeyId: ""
-        type: gp2
+         zones:
+          - "1"
+          - "2"
     ## Docker registry endpoint where Confluent Images are available.
     ##
     registry:
@@ -28,11 +21,21 @@ global:
     plain:
       username: test
       password: test123
+  authorization:
+    rbac:
+      enabled: false
+    simple:
+      enabled: false
+    superUsers: []
+  dependencies:
+    mds:
+      endpoint: ""
+      publicKey: ""
 ## Zookeeper cluster
 ##
 zookeeper:
   name: zookeeper
-  replicas: 2
+  replicas: 3
   resources:
     requests:
       cpu: 200m
@@ -42,7 +45,7 @@ zookeeper:
 ##
 kafka:
   name: kafka
-  replicas: 2
+  replicas: 3
   resources:
     requests:
       cpu: 200m
@@ -77,7 +80,7 @@ connect:
   dependencies:
     kafka:
       bootstrapEndpoint: kafka:9071
-      brokerCount: 2
+      brokerCount: 3
     schemaRegistry:
       enabled: true
       url: http://schemaregistry:8081
@@ -98,7 +101,7 @@ replicator:
     domain: ""
   dependencies:
     kafka:
-      brokerCount: 2
+      brokerCount: 3
       bootstrapEndpoint: kafka:9071
 ##
 ## Schema Registry
@@ -117,7 +120,7 @@ schemaregistry:
     domain: ""
   dependencies:
     kafka:
-      brokerCount: 2
+      brokerCount: 3
       bootstrapEndpoint: kafka:9071
 
 ##
@@ -138,9 +141,9 @@ ksql:
     domain: ""
   dependencies:
     kafka:
-      brokerCount: 2
+      brokerCount: 3
       bootstrapEndpoint: kafka:9071
-      brokerEndpoints: kafka-0.kafka:9071,kafka-1.kafka:9071
+      brokerEndpoints: kafka-0.kafka:9071,kafka-1.kafka:9071,kafka-2.kafka:9071
     schemaRegistry:
       enabled: false
       tls:
