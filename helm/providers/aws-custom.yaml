@@ -21,7 +21,7 @@ global:
     ## Docker registry endpoint where Confluent Images are available.
     ##
     registry:
-      fqdn: quincy2019-registry-common.ecloudcontrol.com
+      fqdn: docker.io
       credential:
         required: false
   sasl:
