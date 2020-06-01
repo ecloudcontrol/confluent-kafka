@@ -4,12 +4,12 @@ app:
   notify: appzdev@cloudbourne.co
     
 build:
-  version: 5.4
+  version: 5.5
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: confluent-5.4
-  image_name: alpha/confluent
+  image_template: confluenthelm-3.1
+  image_name: alpha/confluenthelm
     
 deploy:
   context: alpha/DEV
@@ -22,7 +22,6 @@ monitor:
     
 properties:
   KAFKA_DEPLOYMENT_TYPE: HUB
-  KAFKA_DEPLOYMENT_TYPE: HUB
   AWS_ACCESS_KEY_ID: 
     vault: AWS_ACCESS_KEY_ID
   AWS_SECRET_ACCESS_KEY:
@@ -30,26 +29,11 @@ properties:
   AWS_DEFAULT_REGION: us-east-2
   KUBECONFIG:
     vault: KUBECONFIG
-  K8S_PROVIDER: UNMANAGED
-  PROVIDER_YAML: ntnx.yaml
-  NAMESPACE: staging-kafka-operator
+  PROVIDER_YAML: aws
+  NAMESPACE: staging-kafka-hub
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
-  DOMAIN: appzdemo.com
-  BOOTSTRAP_PREFIX: kafka
-  BROKER_PREFIX: kafka
-  LB_TYPE: internal 
-  LB_ENABLED: true
-  BROKER_ADDRESS: kafka0.appzdemo.com
-  BROKER_PORT: 31110
-  KAFKA_REPLICAS: 3
-  SECURITY_PROTOCOL: SASL_PLAINTEXT
-  SASL_MECHANISMS: PLAIN
-  KAFKA_TOPIC: appzalphademo
-  KAFKA_USER: test
-  KAFKA_PASSWORD:
-    vault: KAFKA_PASSWORD
   APPZ_TEARDOWN_TOKEN: 20200521-1900
   revision : 56
   
