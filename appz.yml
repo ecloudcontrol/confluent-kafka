@@ -35,6 +35,6 @@ properties:
   EKS_REGION: us-east
   EKS_ZONES: us-east-2b
   VERBOSE_LOG: false
-  APPZ_TEARDOWN_TOKEN: 20200604-0230
+  APPZ_TEARDOWN_TOKEN: 20200604-0220
   revision : 69
   
