@@ -25,7 +25,7 @@ properties:
   KUBECONFIG:
     vault: KUBECONFIG
   PROVIDER_YAML: ntnx.yaml
-  NAMESPACE: staging-kafka-operator
+  NAMESPACE: ntnx-kafka-hub-v2
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   VERBOSE_LOG: false
   APPZ_TEARDOWN_TOKEN: 20200608-0236
