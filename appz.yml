@@ -29,5 +29,5 @@ properties:
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   VERBOSE_LOG: false
   APPZ_TEARDOWN_TOKEN: 20200608-0150
-  revision : 71
+  revision : 72
   
