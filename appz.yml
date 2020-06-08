@@ -28,6 +28,9 @@ properties:
   NAMESPACE: ntnx-kafka-hub-v3
   COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
   VERBOSE_LOG: false
+  LB_TYPE: internal 
+  LB_ENABLED: true
+  ENABLE_EXTERNAL_LB: true
   APPZ_TEARDOWN_TOKEN: 20200608-0338
   revision : 72
   
