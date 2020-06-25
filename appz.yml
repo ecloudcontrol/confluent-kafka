@@ -26,7 +26,7 @@ properties:
     vault: KUBECONFIG
   PROVIDER_YAML: ntnx.yaml
   NAMESPACE: ntnx-kafka-hub-v3
-  COMMON_REGISTRY: quincy2019-registry-common.ecloudcontrol.com
+  COMMON_REGISTRY: quincy2019-nutanix-common-registry.ecloudcontrol.com
   VERBOSE_LOG: false
   LB_TYPE: internal 
   LB_ENABLED: true
