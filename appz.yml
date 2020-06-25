@@ -40,5 +40,5 @@ properties:
     vault: KAFKA_PASSWORD
   KAFKA_TOPIC: zzztest
   APPZ_TEARDOWN_TOKEN: 20200608-0338
-  revision : 73
+  revision : 74
   
