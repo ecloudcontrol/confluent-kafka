@@ -9,7 +9,7 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: confluent-5.4
-  image_name: alpha/confluent-ntnx
+  image_name: alpha/ntnx-confluent
     
 deploy:
   context: alpha/DEV
@@ -25,7 +25,7 @@ properties:
   KUBECONFIG:
     vault: KUBECONFIG
   PROVIDER_YAML: ntnx.yaml
-  NAMESPACE: ntnx-kafka-hub-v3
+  NAMESPACE: ntnx-kafka-hub
   COMMON_REGISTRY: quincy2019-nutanix-common-registry.ecloudcontrol.com
   VERBOSE_LOG: false
   LB_TYPE: internal 
